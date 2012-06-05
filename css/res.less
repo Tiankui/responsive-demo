@@ -1,0 +1,53 @@
+@color:#eaeaea;
+@font-color:#666;
+@font-color-2:#999;
+@max-width:1180px;
+@min-width-1:940px;
+@min-width-2:700px;
+@aside-color:#6f6e6f;
+#main{width: 1240px;margin: 0 auto;color:@font-color;}
+#warpper{float: left;}
+#warpper{width: @max-width;position: relative;}
+.aside-wp-1,.aside-wp-2{position: relative;height: 20px;float: left;}
+.aside-wp-1{width: 29px;padding-right: 1px;}
+.aside-wp-2{width: 29px;padding-left: 1px;}
+#header,#footer{background-color: @color;text-align: center;margin: 1em 0;}
+#header,#footer{height: 100px;line-height: 100px;}
+#header h1{margin: 0;}
+#header .tip-1 ,#header .tip-2{color: green;}
+#header .tip-2{display: none;}
+#header .tip-3{display: none;}
+#query{padding: 1em;text-align: center;margin: 1em 0;background-color:@color;}
+#nav{text-align: center;height: 40px;line-height: 40px;background-color: @color;margin-top: 1em;width:@max-width;}
+#warpper .nav-addon{position:fixed;top:0;margin-top: 0;background-color:@aside-color;color:#fff;}
+#goods{margin: 1em -10px;}
+#goods .item{width: 220px;margin: 10px;float: left;}
+#goods .item .img{width: 220px;height: 220px;background-color: @color;}
+#goods .item .hd{height: 24px;background-color: @color;margin: 5px 0;}
+#goods .item .dis{height: 18px;background-color: @color;margin: 5px 0;}
+#goods .item .price{height: 18px;background-color: @color;margin: 5px 0;}
+#goods .item .icons{height: 18px;background-color: @color;margin: 5px 0;}
+#paging{height: 40px;background-color:@color;text-align: center;margin: 1em 0;line-height: 40px;}
+#ad{height: 200px;background-color: @color;text-align: center;margin: 1em 0;line-height: 200px;}
+#right-aside{padding:20px 5px;position:fixed;bottom:0;background-color: @aside-color;height: 160px;width: 18px;color:#fff;}
+#left-aside{position: relative;padding: 5px;top:264px;width: 19px;height: 200px;background-color: @aside-color;color:#fff;}
+#main .left-aside-addon{position: fixed;top:0;left:auto;}
+/*Media-Query*/
+@media (max-width: 1179px){
+	#main{width: 1000px;}
+	#warpper{width: @min-width-1;color:@font-color-2;}
+	#nav{width: @min-width-1;}
+	#header .tip-1 {display: none;}
+	#header .tip-2 {display: inline;}
+	#header .tip-3 {display: none;}
+	#warpper .left-aside-addon{position: fixed;top:0;left:19px;z-index: 100;}
+}
+@media (max-width: 939px){
+	#main{width: 760px;}
+	#warpper{width: @min-width-2;color:@font-color-2;}
+	#nav{width: @min-width-2;}
+	#header .tip-1 {display: none;}
+	#header .tip-2 {display: none;}
+	#header .tip-3 {display: inline;}
+}
+/*Media-Query end*/
